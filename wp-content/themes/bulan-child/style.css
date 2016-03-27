@@ -1,0 +1,56 @@
+/*
+ Theme Name:   Bulan Child
+ Description:  Bulan Child Theme
+ Author:       Stephen Karpeles
+ Author URI:   http://saltdigitalmarketing.com
+ Template:     bulan
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  bulan-child
+*/
+
+/* ================================================================
+   $Base
+   ================================================================ */
+
+body { }
+
+
+/* ================================================================
+   $Header
+   ================================================================ */
+
+.tagline {
+  display: block;
+  padding-top: 11px;
+  width: 250px;
+  color: #454545;
+  font-style: italic;
+  margin: 0 auto; }
+
+.tagline .bullet {
+  font-size: 14px; }
+
+
+/* ================================================================
+   $Theme
+   ================================================================ */
+
+.entry-content img {
+  padding: 2px;
+  background: white;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+}
+
+/*  About Page
+  ----------------------------------------------------------------- */
+
+
+
+
+
+
+
+
