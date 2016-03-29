@@ -22,8 +22,7 @@ body {}
    ================================================================ */
 
 .main-orange {
-  color: #668900;
-}
+  color: #668900; }
 
 /* ================================================================
    Header
@@ -51,8 +50,21 @@ body {}
   border-radius: 2px;
   border: 1px solid #ddd; }
 
-/*  About Page
-  ----------------------------------------------------------------- */
+.hero {
+  background: url('assets/img/banner-feet.jpg') no-repeat;
+  text-align: center;
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 40px;
+  border-radius: 2px;
+  border: 1px solid #ddd; }
+
+.hero-content {
+  left: 0;
+  width: 100%;
+  position: absolute;
+  text-align: center; }
 
 
 /* ================================================================
@@ -72,7 +84,7 @@ div.wpcf7-mail-sent-ok {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
+}/*
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -87,7 +99,7 @@ div.wpcf7-mail-sent-ok {
   .container {
     width: 1170px;
   }
-}
+}*/
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
