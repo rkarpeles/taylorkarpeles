@@ -22,7 +22,7 @@ body {}
    ================================================================ */
 
 .main-orange {
-  color: #668900; }
+  color: #b37800; }
 
 /* ================================================================
    Header
@@ -39,6 +39,18 @@ body {}
 .tagline .bullet {
   font-size: 14px; }
 
+@media (max-width: 420px) { 
+  h1.site-title {
+    font-size: 26px; } }
+
+@media (max-width: 300px) { 
+  h1.site-title {
+    font-size: 23px; } }
+
+@media (max-width: 280px) { 
+  h1.site-title {
+    font-size: 20px; } }
+
 
 /* ================================================================
    Theme
@@ -50,22 +62,47 @@ body {}
   border-radius: 2px;
   border: 1px solid #ddd; }
 
-.hero {
-  background: url('assets/img/banner-feet.jpg') no-repeat;
-  text-align: center;
-  width: 100%;
-  float: left;
+.hero-wrap {
   position: relative;
-  padding: 40px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  padding: 2px;
+  background: white;
   border-radius: 2px;
   border: 1px solid #ddd; }
+
+.hero {
+  background: url('assets/img/banner-feet.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  width: 100%;
+  height: 360px;
+  max-height: 360px;
+  position: relative; }
 
 .hero-content {
   left: 0;
   width: 100%;
+  top: 43%;
   position: absolute;
-  text-align: center; }
+  text-align: center; 
+  color: white; }
 
+.hero-content h1 {
+  font-size: 47px;
+  font-weight: 400;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  color: white; }
+
+.hero-content h2 {
+  letter-spacing: 0;
+  font-family: 'Crimson Text', Georgia, sans-serif;
+  font-style: italic;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  color: #b37800;
+  font-weight: 300;
+  font-size: 30px; }
 
 /* ================================================================
    Forms

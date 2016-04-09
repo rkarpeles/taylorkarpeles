@@ -8,9 +8,11 @@ $title = bulan_mod( $prefix . 'page-title' );
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php hybrid_attr( 'post' ); ?>>
 
-    <div class="hero">
-      <div class="hero-content">
-        <h1>Doula Services</h1>
+    <div class="hero-wrap">
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Doula Services &amp; Support</h1>
+        </div>
       </div>
     </div>
 
