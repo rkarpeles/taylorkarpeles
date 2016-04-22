@@ -1,11 +1,30 @@
-*, *:after, *:before {
-  box-sizing: border-box;
+/* START Print Styles */
+
+@media print {
+  body { 
+    margin: 20px 0 30px; }
+
+  .wrapper {
+    position: absolute;
+    left: 200px; }
+
+  .heading {
+    position: relative;
+    left: -100px; }
 }
 
+/* END Print Styles 
+   ----------------------------------*/
+
+*, *:after, *:before {
+  box-sizing: border-box; }
+
 body {
-  line-height: 1.7;
+  margin: 30px 0 50px;
+  font-size: 18px;
+  line-height: 1.8;
   color: #454545;
-font-family: 'crimson text', Georgia, serif; }
+  font-family: 'crimson text', Georgia, serif; }
 
 .cl-b {
   clear: both; }
@@ -15,13 +34,6 @@ font-family: 'crimson text', Georgia, serif; }
   max-width: 1000px;
   margin: 0 auto; }
 
-@media print {
-  .wrapper {
-  width: 800px;
-  max-width: 800px;
-  margin: 0 auto; }
-}
-
 div, p {
   margin-bottom: 10px; }
 
@@ -29,10 +41,10 @@ h1, h2, h3, h4 {
   font-family: 'Oswald', Helvetica, Arial, sans-serif; }
 
 h2, h3, h4 {
-  font-weight: 300; }
+  font-weight: 700; }
 
 h1 {
-  font-size: 30px; }
+  font-size: 33px; }
 
 h2 {
   font-size: 23px;
@@ -44,7 +56,27 @@ input[type="text"].text-input-md {
   border-top: 0;
   border-bottom: 1px solid #ddd;
   margin-left: 3px;
-  width: 280px; }
+  width: 290px; }
+
+input[type="text"].text-input-lg {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #ddd;
+  margin-left: 3px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 520px; }
+
+input[type="text"].text-input-xlg {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #ddd;
+  margin-left: 3px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  width: 600px; }
 
 input[type="checkbox"] {
   margin-left: 15px;
@@ -61,7 +93,7 @@ input[type="checkbox"].checkbox-custom {
   -moz-appearance: none;
   background-color: #fff;
   border-radius: 2px;
-  border: 1px solid #e0e0e0; }
+  border: 1px solid #ddd; }
 
 textarea {
   width: 360px;
@@ -81,25 +113,58 @@ ol {
   margin-bottom: 30px; }
 
 .mar-bot-a {
-  margin-bottom: 0px; }
+  margin-bottom: 3px; }
+
+.mar-top-a {
+  margin-top: 35px; }
 
 /* =========================== */
 
+header {
+  display: none;
+  margin-bottom: 50px;
+}
+
+header .name {
+  float: left; }
+
+header .info {
+  float: right; }
+
+header div {
+  margin-bottom: 0; }
+
+.heading {
+  display: block;
+  float: none;
+  clear: both;
+  width: 350px;
+  margin: 0 auto 40px;
+  padding-top: 3px;
+  text-align: center;
+  border-bottom: 4px double #666;
+  border-top: 4px double #666;
+  padding-bottom: 5px; }
+
 .chart {
   width: 710px;
-  padding-left: 506px;
-  margin-top: 30px;
+  padding-left: 505px;
+  margin-top: 50px;
   border-bottom: 1px solid #454545;
   border-top: 1px solid #454545;
   padding-top: 10px; }
 
+.chart.chart-first {
+  margin-top: 20px; }
+
 .chart-title {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 400;
   float: left;
+  font-size: 17px;
   font-weight: 17px;
   font-family: 'Oswald', Helvetica, Arial, sans-serif;
-  margin-left: -506px; /* negative of padding-left on .chart */ }
+  margin-left: -505px; /* negative of padding-left on .chart */ }
 
 .chart-question {
   position: relative;
@@ -112,7 +177,7 @@ ol {
   position: absolute;
   left: 0;
   top: 29px;
-  width: 700px;
+  width: 710px;
   height: 1px;
   border-bottom: 1px solid #eee; }
 
@@ -124,6 +189,7 @@ ol {
   margin-left: 26px; }
 
 .chart-content {
+  font-size: 17px;
   line-height: 1.35; }
 
 .chart-content input[type="checkbox"] {
@@ -135,4 +201,4 @@ ol {
   -moz-appearance: none;
   background-color: #fff;
   border-radius: 2px;
-  border: 1px solid #e0e0e0; }
+  border: 1px solid #ddd; }
