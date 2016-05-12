@@ -16,6 +16,9 @@
 
 body {}
 
+#main a {
+  border-bottom: 1px solid #eee; }
+
 
 /* ================================================================
    Colors
@@ -55,6 +58,16 @@ body {}
 /* ================================================================
    Theme
    ================================================================ */
+
+.site-header::after {
+  background-color: rgba(165, 85, 96, .35); }
+
+#site-navigation .menu-item a {
+  color: #454545; }
+
+#site-navigation .current-menu-item a,
+#site-navigation .menu-item a:hover {
+  color: #cc9c3d; }
 
 .entry-content img {
   padding: 2px;
@@ -103,6 +116,9 @@ body {}
   color: #b37800;
   font-weight: 300;
   font-size: 30px; }
+
+#scrollUp {
+  display: none !important; }
 
 /* ================================================================
    Forms
